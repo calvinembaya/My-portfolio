@@ -220,7 +220,7 @@ footer{
 .map-btn{
     display:inline-block;
     padding:12px 25px;
-    background:#1b83be;
+    background:#276191;
     color:white;
     text-decoration:none;
     border-radius:8px;
@@ -238,7 +238,7 @@ footer{
 .social-icons a{
     width:50px;
     height:50px;
-    background:#2563eb;
+    background:#274b8d;
     color:white;
     display:flex;
     justify-content:center;
@@ -259,18 +259,19 @@ footer{
 .education {
     max-width: 1000px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 40px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .education h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #e6eff5;
+    color: #33ff00;
     background: 2a4rgb(21, 84, 156);
 }
 
 .education-card {
-    background: #6281c4;
     padding: 25px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -278,9 +279,8 @@ footer{
 }
 
 .education-card h2 {
-    color: #e6eff5;
+    color: #ff0000;
     margin-bottom: 10px;
-    background: #5a25eb;
 }
 
 .education-card ul {
@@ -291,12 +291,70 @@ footer{
     display: inline-block;
     margin-top: 20px;
     padding: 12px 25px;
-    background: #0077b6;
-    color: rgb(237, 248, 247);
+    color: #ff0000;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .back-btn:hover {
     background: #529407;
+}
+
+.education {
+    height: 100vh;
+    background-image: url("images2.webp");
+    background-size: cover;
+    background-position: center;
+    animation: zoomBackground 15s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ff0000;
+}
+
+@keyframes zoomBackground {
+    0% {
+        background-size: 100%;
+    }
+    100% {
+        background-size: 120%;
+    }
+}
+
+.education-card {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.education {
+    Height: 100vh;
+    Background-image: url("images2.webp");
+    Background-size: cover;
+    Animation: slideBackground 20s infinite alternate;
+}
+@keyframes slideBackground {
+    0% {
+        Background-position: left center;
+    }
+    100% {
+        Background-position: right center;
+    }
+}
+
+
+.education-card {
+    Animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        Transform: translateY(0);
+    }
+    50% {
+        Transform: translateY(-15px);
+    }
+    100% {
+        Transform: translateY(0);
+    }
 }
