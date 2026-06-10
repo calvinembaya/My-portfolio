@@ -330,7 +330,10 @@ footer{
 
 .education {
 position: relative;
-height: 100vh;
+height: auto;
+min-height: 200px;
+height: 60vh;
+max-height: 800px;
 overflow: hidden;
   
 
