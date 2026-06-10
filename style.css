@@ -324,6 +324,9 @@ footer{
 .education-card {
     padding: 20px;
     border-radius: 10px;
+    margin:auto;
+    height: auto;
+    min-height: 100px;
 }
 
 
@@ -332,11 +335,16 @@ footer{
 position: relative;
 height: auto;
 min-height: 200px;
-height: 60vh;
+height: 150vh;
 max-height: 800px;
 overflow: hidden;
   
 
+}
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .slide {
