@@ -322,7 +322,6 @@ footer{
 }
 
 .education-card {
-    padding: 20px;
     border-radius: 10px;
     margin:auto;
     height: auto;
@@ -332,13 +331,22 @@ footer{
 
 
 .education {
-position: relative;
-height: auto;
-min-height: 200px;
-height: 150vh;
-max-height: 800px;
-overflow: hidden;
-  
+height: 100vh;
+    margin: auto;
+    width: 100%;
+    font: 1.2rem;
+    max-width: 1200px;
+    background-image: url("image/images4.webp");
+    background-size: cover;
+    background-position: center;
+    animation:alternate-reverse 15s infinite slideBackground;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #57ff09;
+    font-weight: bolder;
+}
 
 }
 img {
