@@ -251,14 +251,13 @@ section {
 }
 
 .education-card {
-    border-radius: 10px;
     margin:auto;
     height: auto;
     min-height: 100px;
     align-items: center;
     justify-content: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
 }
 
 
