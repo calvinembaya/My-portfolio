@@ -209,7 +209,7 @@ footer{
 /* Education Section */
 
 body  {
-    background-image: url("image/images4.webp");
+    background-image: url("image/images2.webp");
     animation:alternate-reverse 15s infinite slideBackground;
      background-size: cover;
      background-position: center;
@@ -218,6 +218,8 @@ body  {
 height: 100vh;
     margin: auto;
     width: 100%;
+    background-image: url("image/images4.webp");
+     animation:alternate-reverse 15s infinite slideBackground;
     font: 1.2rem;
     max-width: 1200px;
     background-size: cover;
