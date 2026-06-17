@@ -42,7 +42,6 @@ nav ul li a{
     text-decoration:none;
     font-weight:bold;
 }
-
 nav ul li a:hover{
     color:#ebb645;
 }
@@ -219,7 +218,7 @@ height: 100vh;
     margin: auto;
     width: 100%;
     background-image: url("image/images4.webp");
-     animation:alternate-reverse 15s infinite slideBackground;
+     animation:alternate-reverse 20s infinite slideBackground;
     font: 1.2rem;
     max-width: 1200px;
     background-size: cover;
@@ -260,6 +259,12 @@ section {
     justify-content: center;
     width: 100%;
     max-width: 1200px;
+}
+@keyframes 
+slideBackground {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
 
 
@@ -344,4 +349,10 @@ section {
     width: 20px;
     height: 20px;
     margin-left: 5px;
+}
+
+@keyframes slideBackground {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
 }
