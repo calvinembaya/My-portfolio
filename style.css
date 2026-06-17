@@ -53,7 +53,7 @@ nav ul li a:hover{
         rgba(0,0,0,0.6),
         rgba(0,0,0,0.6)
     ),
-    url("image/profile.png");
+    url("image/IMG_20260120_121634_449.jpg");
 
     background-size:cover;
     background-position:center;
@@ -208,8 +208,8 @@ footer{
 /* Education Section */
 
 body  {
-    background-image: url("image/images2.webp");
-    animation:alternate-reverse 15s infinite slideBackground;
+    background-image: url("image/images4.webp");
+    animation:alternate-reverse 20s infinite slideBackground;
      background-size: cover;
      background-position: center;
 }
@@ -217,7 +217,7 @@ body  {
 height: 100vh;
     margin: auto;
     width: 100%;
-    background-image: url("image/images4.webp");
+    background-image: url("image/images2.webp");
      animation:alternate-reverse 20s infinite slideBackground;
     font: 1.2rem;
     max-width: 1200px;
@@ -281,7 +281,7 @@ slideBackground {
     background-image: url("image/photo.avif");
     background-size: cover;
     background-position: center;
-    animation:alternate-reverse 15s infinite slideBackground;
+    animation:alternate-reverse 20s infinite slideBackground;
     display: flex;
     justify-content: center;
     align-items: center;
