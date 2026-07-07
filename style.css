@@ -208,7 +208,8 @@ footer{
 /* Education Section */
 
 body  {
-    background-image: url("image/images4.webp");
+    background-image: url("image/images2.webp.");
+    
     animation:alternate-reverse 20s infinite slideBackground;
      background-size: cover;
      background-position: center;
@@ -355,4 +356,24 @@ slideBackground {
     0% {background-position: 0% 50%;}
     50% {background-position: 100% 50%;}
     100% {background-position: 0% 50%;}
+}
+
+
+/*projectcs*/
+.projects {
+    color: #57ff09;
+    background: none;
+    font-weight: bold;
+    max-width: 100%;
+    height: auto;
+    background-image: url("image/images (4).jpeg");
+    animation:changeBackground 15s infinite ease-in-out;
+
+}
+
+@keyframes changeBackground {
+    0% { background-image: url("image/images (4).jpeg");}
+    33% {background-image: url("image/images2.webp"); } 
+    66% {background-image: url("image/images3.webp");}
+    100% {background-image: url("image/images1.jpg");}
 }
