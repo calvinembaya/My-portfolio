@@ -13,8 +13,8 @@ body{
 
 /* Navigation */
 nav{
-    background:#0a3d62;
-    color:white;
+     background:linear-gradient(rgba(170, 123, 123, 0.993),rgb(212, 29, 29),rgb(179, 114, 114),rgb(212, 29, 29));
+    color:rgb(255, 255, 255);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -43,7 +43,7 @@ nav ul li a{
     font-weight:bold;
 }
 nav ul li a:hover{
-    color:#ebb645;
+    color:#d48325;
 }
 
 /* Hero */
@@ -68,8 +68,11 @@ nav ul li a:hover{
 
 .hero h1{
     font-size:55px;
+    color:#ce2d2d;
 }
-
+.hero h1:hover{
+    color:#ffffff;
+}
 .hero h2{
     margin:10px 0;
 }
@@ -78,11 +81,15 @@ nav ul li a:hover{
     display:inline-block;
     margin-top:20px;
     padding:12px 25px;
-    background:#feca57;
-    color:black;
+    background:#ac1616;
+    color:rgb(255, 255, 255);
     text-decoration:none;
     border-radius:5px;
     font-weight:bold;
+}
+.btn:hover{
+    background:#ffffff;
+    color:#ac1616;
 }
 
 /* Sections */
@@ -93,9 +100,13 @@ section{
 section h2{
     text-align:center;
     margin-bottom:40px;
-    color:#bac430;
+    color:#b32727;
 }
 
+section h2:hover{
+    color:#ffffff;
+    background: #ac1616;
+}
 /* Skills Button */
 .skills-container{
     display:grid;
@@ -103,12 +114,19 @@ section h2{
     gap:20px;
 }
 
+.skills-container .card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+    color:rgb(206, 41, 41);
+    background:rgb(255, 255, 255);
+}
+
 .card{
-    background:rgb(15, 118, 150);
+    background:rgb(175, 29, 29);
     padding:20px;
     text-align:center;
     border-radius:15px;
-    box-shadow:0 0 15px rgb(40, 177, 158);
+    box-shadow:0 0 15px rgb(255, 255, 255);
 }
 
 /* Projects */
@@ -119,10 +137,20 @@ section h2{
 }
 
 .project-card{
-    background:rgb(9, 99, 110);
+    background:rgb(248, 248, 248);
     padding:20px;
     border-radius:15px;
-    box-shadow:0 0 15px rgba(81, 140, 189, 0.856);
+    box-shadow:0 0 15px rgb(197, 34, 34);
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+.project-card H3{
+    color: rgb(201, 37, 37);
+}
+.project-card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
 }
 
 /* Education */
@@ -145,14 +173,14 @@ form textarea{
     width:100%;
     padding:12px;
     margin:10px 0;
-    border:1px solid #0b569b;
+    border:1px solid #d31818;
     border-radius:5px;
 }
 
 button{
     width:100%;
     padding:12px;
-    background:#740b66;
+    background:#c51414;
     color:rgb(255, 255, 255);
     border:none;
     border-radius:5px;
@@ -160,12 +188,13 @@ button{
 }
 
 button:hover{
-    background:#2910b4;
+    background:#ffffff;
+    color: #c52727;
 }
 
 /* Footer */
 footer{
-    background:#0a3d62;
+    background:#b42d2d;
     color:rgb(250, 250, 250);
     text-align:center;
     padding:20px;
@@ -196,7 +225,7 @@ footer{
 .map-btn{
     display:inline-block;
     padding:12px 25px;
-    background:#276191;
+    background:#ad1f1f;
     color:white;
     text-decoration:none;
     border-radius:8px;
@@ -227,7 +256,7 @@ height: 100vh;
     justify-content: center;
     align-items: center;
     text-align: center; 
-    color: #57ff09;
+    color: #ffffff;
     font-weight: bolder;
 }
 
@@ -241,9 +270,14 @@ section {
 .education h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #33ff00;
+    color: #c02d2d;
     background: 2a4rgb(21, 84, 156);
     font: 2.5rem;
+} 
+
+.education h1:hover {
+    color: #ffffff;
+    background: #af1212;
 }
 
 
@@ -287,23 +321,16 @@ slideBackground {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #57ff09;
+    color: rgb(202, 32, 32);
     font-weight: bolder;
 }
 
 
-.social-icons{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    margin-top:20px;
-}
-
-.social-icons a{
+.social-whatsapp a {
     width:50px;
     height:50px;
-    background:#274b8d;
-    color:white;
+    background:#26f10b;
+    color:rgba(255, 255, 255, 0.774);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -314,12 +341,70 @@ slideBackground {
     transition:0.3s;
 }
 
-.social-icons a:hover{
+.social-whatsapp a:hover{
     transform:translateY(-5px);
     box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
+.social-facebook a {
+    width:50px;
+    height:50px;
+    background:#1e13be;
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
 
+    transition:0.3s;
+}
+
+.social-facebook a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.social-instagram a {
+    width:50px;
+    height:50px;
+    background:#ffffff;
+    color:linear-gradient(to right, #ff0000, #e969d4, #f046af, #dfd158);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
+
+    transition:0.3s;
+}
+
+.social-instagram a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.social-email a {
+    width:50px;
+    height:50px;
+    background:#7f7bb3;
+    color:rgb(255, 255, 255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:22px;
+
+    transition:0.3s;
+}
+
+.social-email a:hover{
+    transform:translateY(-5px);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
 
 
 
@@ -361,7 +446,6 @@ slideBackground {
 
 /*projectcs*/
 .projects {
-    color: #57ff09;
     background: none;
     font-weight: bold;
     max-width: 100%;
