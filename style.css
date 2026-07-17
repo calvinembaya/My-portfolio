@@ -6,20 +6,18 @@
 }
 
 body{
-    background:#ffffff;
-    color:#fcfcfc;
+    background:#756c6c;
+    color:#ffffff;
     line-height:1.6;
 }
 
 /* Navigation */
 nav{
-     background:linear-gradient(rgba(170, 123, 123, 0.993),rgb(212, 29, 29),rgb(179, 114, 114),rgb(212, 29, 29));
-    color:rgb(255, 255, 255);
+     background:linear-gradient(rgb(40, 46, 46),rgb(27, 24, 24),rgb(41, 30, 30),rgb(27, 21, 21));
+    color:rgb(49, 164, 168);
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    padding:15px 50px;
-    position:sticky;
+    padding: 10px;
     top:0;
 }
 
@@ -38,22 +36,25 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
+    color:rgb(50, 160, 187);
     text-decoration:none;
     font-weight:bold;
 }
 nav ul li a:hover{
-    color:#d48325;
+    color:#d89a28;
 }
 
 /* Hero */
 .hero{
     height:90vh;
     background:linear-gradient(
-        rgba(0,0,0,0.6),
-        rgba(0,0,0,0.6)
+rgb(66, 62, 62), 
+rgba(0, 0, 0, 0.5), 
+rgba(0, 0, 0, 0.5),
+rgba(0, 0, 0, 0.5),
+rgba(107, 106, 106, 0.5)
     ),
-    url("image/IMG_20260120_121634_449.jpg");
+    url("image/PROFILE1.png");
 
     background-size:cover;
     background-position:center;
@@ -68,7 +69,7 @@ nav ul li a:hover{
 
 .hero h1{
     font-size:55px;
-    color:#ce2d2d;
+    color:rgb(50, 160, 187);
 }
 .hero h1:hover{
     color:#ffffff;
@@ -81,15 +82,15 @@ nav ul li a:hover{
     display:inline-block;
     margin-top:20px;
     padding:12px 25px;
-    background:#ac1616;
-    color:rgb(255, 255, 255);
+    background:#201f1f;
+    color:rgb(163, 132, 30);
     text-decoration:none;
     border-radius:5px;
     font-weight:bold;
 }
 .btn:hover{
     background:#ffffff;
-    color:#ac1616;
+    color:rgb(50, 160, 187);
 }
 
 /* Sections */
@@ -100,12 +101,12 @@ section{
 section h2{
     text-align:center;
     margin-bottom:40px;
-    color:#b32727;
+    color:rgb(46, 181, 214);
 }
 
 section h2:hover{
     color:#ffffff;
-    background: #ac1616;
+    background: #201f1f;
 }
 /* Skills Button */
 .skills-container{
@@ -117,16 +118,16 @@ section h2:hover{
 .skills-container .card:hover{
     transform:scale(1.05);
     transition:0.3s;
-    color:rgb(206, 41, 41);
-    background:rgb(255, 255, 255);
+    color:rgb(163, 132, 30);
+    background:#201f1f;
 }
 
 .card{
-    background:rgb(175, 29, 29);
+    background:#201f1f;
     padding:20px;
     text-align:center;
     border-radius:15px;
-    box-shadow:0 0 15px rgb(255, 255, 255);
+    box-shadow:0 0 15px rgb(3, 3, 3);
 }
 
 /* Projects */
@@ -137,16 +138,17 @@ section h2:hover{
 }
 
 .project-card{
-    background:rgb(248, 248, 248);
+    background:#201f1f;
     padding:20px;
     border-radius:15px;
-    box-shadow:0 0 15px rgb(197, 34, 34);
-    color: rgb(0, 0, 0);
+    box-shadow:0 0 15px rgb(0, 0, 0);
+    color: rgb(253, 252, 252);
     text-align: center;
 
 }
 .project-card H3{
-    color: rgb(201, 37, 37);
+    color: rgb(8, 134, 8)
+    ;
 }
 .project-card:hover{
     transform:scale(1.05);
@@ -155,11 +157,11 @@ section h2:hover{
 
 /* Education */
 .education-box{
-    background:rgb(23, 100, 119);
+    background:#201f1f;
     padding:20px;
     border-radius:15px;
     text-align:center;
-    box-shadow:0 0 15px rgba(76, 143, 189, 0.986);
+    box-shadow:0 0 20px #000000;
 }
 
 /* Contact Button */
@@ -173,14 +175,14 @@ form textarea{
     width:100%;
     padding:12px;
     margin:10px 0;
-    border:1px solid #d31818;
+    border:1px solid #000000;
     border-radius:5px;
 }
 
 button{
     width:100%;
     padding:12px;
-    background:#c51414;
+    background:#201f1f;
     color:rgb(255, 255, 255);
     border:none;
     border-radius:5px;
@@ -188,13 +190,13 @@ button{
 }
 
 button:hover{
-    background:#ffffff;
-    color: #c52727;
+    background:#201f1f;
+    color: rgb(46, 181, 214);
 }
 
 /* Footer */
 footer{
-    background:#b42d2d;
+    background:#201f1f;
     color:rgb(250, 250, 250);
     text-align:center;
     padding:20px;
@@ -225,7 +227,7 @@ footer{
 .map-btn{
     display:inline-block;
     padding:12px 25px;
-    background:#ad1f1f;
+    background:#201f1f;
     color:white;
     text-decoration:none;
     border-radius:8px;
@@ -270,14 +272,13 @@ section {
 .education h1 {
     text-align: center;
     margin-bottom: 40px;
-    color: #c02d2d;
-    background: 2a4rgb(21, 84, 156);
+    color: rgb(8, 134, 8);
     font: 2.5rem;
 } 
 
 .education h1:hover {
     color: #ffffff;
-    background: #af1212;
+    background: #272222;
 }
 
 
@@ -321,8 +322,22 @@ slideBackground {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(202, 32, 32);
+    color: rgb(46, 181, 214);
     font-weight: bolder;
+}
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(8, 134, 8);
+    font: 2.5rem;
+}
+.contact-section h1:hover {
+    color: #ffffff;
+    background: #272222;
+}
+.contact-section H3 {
+    color: rgb(8, 134, 8);
+    font: 1.5rem;
 }
 
 
@@ -330,7 +345,7 @@ slideBackground {
     width:50px;
     height:50px;
     background:#26f10b;
-    color:rgba(255, 255, 255, 0.774);
+    color:#ffffff;
     display:flex;
     justify-content:center;
     align-items:center;
