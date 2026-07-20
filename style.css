@@ -14,34 +14,31 @@ body{
 /* Navigation */
 nav{
      background:linear-gradient(rgb(40, 46, 46),rgb(27, 24, 24),rgb(41, 30, 30),rgb(27, 21, 21));
-    color:rgb(49, 164, 168);
-    display:flex;
-    justify-content:space-between;
-    padding: 10px;
-    top:0;
+    color:rgb(38, 179, 184);
+    text-align:center;
+    padding: 18px;
 }
 
-.logo{
-    font-size:24px;
-    font-weight:bold;
-}
+ 
 
-nav ul{
-    list-style:none;
-    display:flex;
-}
+        nav a{
+            color:rgb(10, 176, 206);
+            text-decoration:none;
+            margin:0 15px;
+            font-weight:bold;
+            font-size:1.1rem;
+        }
 
-nav ul li{
-    margin-left:20px;
-}
+       
 
-nav ul li a{
-    color:rgb(50, 160, 187);
-    text-decoration:none;
-    font-weight:bold;
-}
-nav ul li a:hover{
+nav  a:hover{
     color:#d89a28;
+}
+
+nav a:active{
+    color:#31ff08;
+    background: #036b7e;
+    
 }
 
 /* Hero */
@@ -475,4 +472,67 @@ slideBackground {
     33% {background-image: url("image/images2.webp"); } 
     66% {background-image: url("image/images3.webp");}
     100% {background-image: url("image/images1.jpg");}
+}
+
+/* Skills Section */
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:40px;
+    padding:60px 20px;
+}
+
+.skill-card{
+    text-align:center;
+    color:white;
+}
+
+.circle{
+    --size:150px;
+    width:var(--size);
+    height:var(--size);
+    border-radius:50%;
+    background:
+    conic-gradient(var(--color) calc(var(--percent)*1%), #1f2937 0);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    animation:grow 2s ease forwards;
+}
+
+.circle::before{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    background:#0f172a;
+    border-radius:50%;
+}
+
+.circle span{
+    position:relative;
+    z-index:1;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.skill-card h3{
+    margin-top:18px;
+    font-size:20px;
+}
+
+@keyframes grow{
+
+    from{
+        background:conic-gradient(var(--color) 0%, #1f2937 0);
+    }
+
+    to{
+        background:
+        conic-gradient(var(--color) calc(var(--percent)*1%), #1f2937 0);
+    }
+
 }
